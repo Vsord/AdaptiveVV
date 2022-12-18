@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Adaptive test</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="fishBlock" style="width: 163px;"></div>
+        <div class="burgerMenu">
+            <div></div>
+            <div class="longerBurgerMenuLine"></div>
+            <div></div>
+        </div>
+        <div class="headerIcons">
+            <ul>
+                <li><a href="#">Мероприятия</a></li>
+                <li><a href="#">Товары</a></li>
+                <li><a href="#">Клиенты</a></li>
+            </ul>
+        </div>
+        <div class="headerProfile">
+            <div class="headerProfileAvatar"></div>
+            <p>admin@okuguru.com</p>
+            <button></button>
+        </div>
+    </div>
+    <div class="contentTitle">
+        <h2>Создание мероприятия</h2>
+    </div>
+    <div class="content">
+        <div class="contentInputs">
+            <div>
+                <label for="eventName">Название мероприятия</label>
+                <input id="eventName" type="text" placeholder="Введите название">
+            </div>
+            <div>
+                <label for="hostName">Имя ведущего</label>
+                <input id="hostName" type="text" placeholder="Введите имя">
+            </div>
+            <div>
+                <label for="date">Дата и время начала</label>
+                <input class="startDateInput" id="date" type="date">
+                <input class="startTimeInput" id="date" type="time">
+            </div>
+            <div>
+                <label for="youtubeLink">Ссылка на YouTube трансляцию</label>
+                <input id="youtubeLink" type="text" placeholder="Вставьте ссылку">
+            </div>
+            <div>
+                <label for="link">Ссылка на заглушку</label>
+                <input id="link" type="text" placeholder="Вставьте ссылку">
+            </div>
+            <div>
+                <label for="outSideButtonLink">Внешняя кнопка (ссылка)</label>
+                <input id="outSideButtonLink" type="text" placeholder="Вставьте ссылку">
+            </div>
+        </div>
+        <div class="contentCheckBoxes">
+            <div class="eventAccess">
+                <div>
+                    <p>Доступ к мероприятию</p>
+                    <input id="withPassword" type="radio">
+                    <label for="withPassword">По паролям</label>
+                </div>
+                <div>
+                    <input id="open" type="radio">
+                    <label for="open">Открытый</label>
+                </div>
+            </div>
+            <div class="inputSettings">
+                <div>
+                    <label for="setting1">Чат при запуске мероприятия</label>
+                    <input id="setting1" type="checkbox">
+                </div>
+                <hr>
+                <div>
+                    <div style="width: 50%; margin: 0;">
+                        <label for="setting2">Кликабельные ссылки от пользователей в чате</label>
+                    </div>
+                    <input id="setting2" type="checkbox">
+                </div>
+                <hr>
+                <div>
+                    <label for="setting3">Корзина</label>
+                    <input id="setting3" type="checkbox">
+                </div>
+                <hr>
+            </div>
+            <div class="downloadPdfButton">
+                <label for="pdfButton">Презентация</label>
+                <button id="pdfButton">Загрузить PDF</button>
+            </div>
+            <div class="neccessaryInputs">
+                <p>Дополнительные обязательные поля при входе</p>
+                <div>
+                    <input type="checkbox" id="surname">
+                    <label for="surname">Фамилия</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="city">
+                    <label for="city">Город</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="email">
+                    <label for="email">Email</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="saveButton">
+        <button>Сохранить</button>
+    </div>
+    <div class="footer">
+        Trade Broadcast 2022 ©
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,298 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+.header {
+    background-color: #0D63F3;
+    height: 74px;
+    border-radius: 0px 0px 43px 43px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header .headerProfile button {
+    background: url(./pics/Group.png) no-repeat;
+    width: 25px;
+    height: 25px;
+    border: none;
+    cursor: pointer;
+}
+
+.header .headerProfile p {
+    color: white;
+}
+
+.header .headerProfile .headerProfileAvatar {
+    background: url(./pics/Avatar.png) no-repeat;
+}
+
+.header .headerIcons ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0px 73px;
+
+}
+
+.header .headerIcons ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.header .headerIcons ul li a:hover {
+    color: rgba(255, 255, 255, 0.66);
+}
+
+.header .headerIcons ul {
+    display: flex;
+    margin: 0;
+}
+
+.header .headerProfile {
+    display: flex;
+    align-items: center;
+    width: 275px;
+    justify-content: space-between;
+}
+
+.header .headerProfile .headerProfileAvatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.contentTitle h2 {
+    text-align: center;
+    margin: 33px;
+}
+
+.saveButton {
+    text-align: center;
+    margin-top: 38px;
+}
+
+.saveButton button {
+    width: 225px;
+    height: 60px;
+    background-color: #0D63F3;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.content .contentInputs div label {
+    display: block;
+    margin-bottom: 9px;
+}
+
+.content .contentInputs div input {
+    width: 408px;
+    padding-left: 16px;
+    height: 55px;
+    font-size: 16px;
+}
+
+.content .contentInputs div input::placeholder {
+    font-size: 16px;
+}
+
+.content .contentInputs div {
+    margin-bottom: 33px;
+}
+
+.content .contentInputs div .startDateInput,
+.content .contentInputs div .startTimeInput {
+    width: 193px;
+    height: 55px;
+}
+
+.content .contentCheckBoxes .downloadPdfButton button {
+    background: url(./pics/DownloadSimple.png) no-repeat;
+    background-position: 90% 45%;
+    width: 225px;
+    height: 60px;
+    background-color: #0D63F3;
+    font-size: 16px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.content .contentCheckBoxes .eventAccess {
+    margin-bottom: 28px;
+}
+
+.content .contentCheckBoxes .eventAccess div input[type="radio"] {
+    width: 24px;
+    height: 24px;
+}
+
+.content .contentCheckBoxes .eventAccess div p {
+    margin-top: 0;
+}
+
+.content .contentCheckBoxes .eventAccess div:nth-child(1) {
+    margin-bottom: 24px;
+}
+
+.content .contentCheckBoxes .inputSettings {
+    margin-bottom: 47px;
+}
+
+.content .contentCheckBoxes .inputSettings div:nth-child(1),
+.content .contentCheckBoxes .inputSettings div:nth-child(3),
+.content .contentCheckBoxes .inputSettings div:nth-child(5) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.content .contentCheckBoxes .inputSettings input[type="checkbox"] {
+    width: 41px;
+    height: 25px;
+    position: relative;
+    -webkit-appearance: none;
+    outline: none;
+    background-color: #c6c6c6;
+    border-radius: 20px;
+    transition: .5s;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, .2);
+}
+
+.content .contentCheckBoxes .inputSettings input:checked[type="checkbox"] {
+    background-color: #40e551;
+}
+
+.content .contentCheckBoxes .inputSettings input[type="checkbox"]:before {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    transition: .5s;
+    transform: scale(1.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+}
+
+.content .contentCheckBoxes .inputSettings input:checked[type="checkbox"]:before {
+    left: 17px;
+}
+
+.content .contentCheckBoxes .inputSettings hr {
+    background-color: #E6E7E8;
+    border: none;
+    height: 2px;
+}
+
+.content .contentCheckBoxes .inputSettings div {
+    margin-bottom: 20px;
+}
+
+.content .contentCheckBoxes .downloadPdfButton {
+    margin-bottom: 44px;
+}
+
+.content .contentCheckBoxes .downloadPdfButton label {
+    display: block;
+    margin-bottom: 14px;
+}
+
+.content .contentCheckBoxes .neccessaryInputs div {
+    margin-bottom: 28px;
+}
+
+.content .contentCheckBoxes .neccessaryInputs div input[type="checkbox"] {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    -webkit-appearance: none;
+    outline: none;
+    border: 1.5px solid #0D63F3;
+    border-radius: 20px;
+}
+
+.content .contentCheckBoxes .neccessaryInputs div input:checked[type="checkbox"] {
+    background-color: #0D63F3;
+}
+
+.content .contentCheckBoxes .neccessaryInputs div input:checked[type="checkbox"]::before {
+    content: "";
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    background: url(./pics/checked.png) no-repeat;
+    background-position: 17% 20%;
+    background-size: 15px 10px;
+}
+
+/* .content .contentCheckBoxes .neccessaryInputs div input[type="checkbox"] {
+    width: 17px;
+    height: 17px;
+    -webkit-appearance: none;
+    outline: none;
+    background-color: #0D63F3;
+    border-radius: 20px;
+} */
+
+.footer {
+    text-align: center;
+    color: #BDBDBD;
+    margin-top: 67px;
+}
+
+.header .burgerMenu {
+    cursor: pointer;
+    display: none;
+}
+
+.header .burgerMenu div {
+    width: 22px;
+    height: 3px;
+    margin: 4px;
+    background-color: #fff;
+}
+
+.header .burgerMenu .longerBurgerMenuLine {
+    width: 30px;
+}
+
+
+@media (max-width: 1180px) {
+    .header {
+        border-radius: 0;
+        justify-content: flex-start;
+    }
+
+    .fishBlock {
+        display: none;
+    }
+
+    .header .headerProfile,
+    .header .headerIcons {
+        display: none;
+    }
+
+    .header .burgerMenu {
+        display: block;
+        margin-left: 20px;
+    }
+}
